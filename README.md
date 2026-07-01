@@ -65,15 +65,15 @@ The project involves four complementary roles within a team of 4 students:
 
 ---
 
-## Automated Evaluation Criteria
+## My Contribution
 
-Evaluation is fully automated by a correction bot on a hidden dataset (minimum 5 unseen buggy code instances):
+As the **Prompt Engineer** of the team, I was responsible for designing and versioning the system prompts for all three agents:
 
-| Dimension | Weight | Criteria |
-|---|---|---|
-| Performance | 40% | Does the final code pass unit tests? Has the Pylint score improved? |
-| Technical Robustness | 30% | Does the system run without crashing? No infinite loop (max 10 iterations)? --target_dir argument respected? |
-| Data Quality | 30% | Is experiment_data.json valid? Does it contain the complete history? |
+- **The Auditor** — prompts guiding static code analysis and refactoring plan generation
+- **The Fixer** — prompts instructing file-by-file error correction based on the audit plan
+- **The Judge** — prompts managing test result interpretation and self-healing loop decisions
+
+The main challenge was crafting prompts precise enough to minimize hallucinations, keep token cost low, and ensure each agent had only the relevant context it needed — without overloading its memory window.
 
 ---
 
