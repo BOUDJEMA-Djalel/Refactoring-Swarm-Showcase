@@ -46,7 +46,7 @@ The project involves four complementary roles within a team of 4 students:
 |---|---|
 | Orchestrator (Lead Dev) | Execution graph design (LangGraph / CrewAI / AutoGen), agent relay logic, main.py and CLI |
 | Toolsmith | Python functions called by agents (internal API), sandbox security, pylint and pytest interfaces |
-| Prompt Engineer | Writing and versioning system prompts, hallucination and token cost optimization, context management |
+| Prompt Engineer (ME)  | Writing and versioning system prompts, hallucination and token cost optimization, context management |
 | Quality & Data Manager | Full telemetry, experiment_data.json logging, internal test dataset creation |
 
 ---
